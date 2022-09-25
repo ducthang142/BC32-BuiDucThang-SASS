@@ -1,0 +1,59 @@
+#teacher {
+    position: absolute;
+    z-index: 0;
+    top: 29rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-top: 2rem;
+
+    & .row {
+        gap: 20px;
+    }
+
+    & .teacher__bg {
+        background-color: #dcd1f3;
+    }
+
+    & .teacher__content {
+        padding-top: 2rem;
+        position: relative;
+        z-index: 3;
+    }
+}
+
+
+.card {
+    width: 270px;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.7s;
+
+     & h6 {
+        color: #b61984;
+        font-size: 0.75rem;
+    }
+
+     & h4 {
+        font-size: 1.55rem;
+        font-weight: 700;
+    }
+    
+    & img {
+        transition: all 0.7s;
+    }
+
+    & img:hover {
+        transform: scale(1.1);
+    }
+
+    & .card-top {
+        overflow: hidden;
+    }
+
+    &:hover {
+        box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.151)
+    }
+    
+}

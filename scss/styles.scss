@@ -1,0 +1,24 @@
+//Reset
+@import "./Base/reset";
+
+//Mixin và biến
+@import "./Helpers/mixin";
+@import "./Helpers/variables";
+
+//
+
+
+
+
+//Layout
+//Header
+@import "./Layouts/header";
+
+//Banner
+@import "./Layouts/backgrounds";
+
+//About Us
+@import "./Layouts/aboutUs";
+
+//Teacher 
+@import "./Layouts/teacher"

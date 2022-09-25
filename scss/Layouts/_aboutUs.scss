@@ -1,0 +1,21 @@
+#aboutUs {
+    position: absolute;
+    z-index: 2;
+    padding: 65px 0;
+    width: 100%;
+}
+
+#aboutUs .aboutUs__content{
+    display: flex;
+    align-items: center;
+}
+
+.aboutUs__title h4 {
+    color: #b61984;
+    font-size: 1.1rem;
+}
+
+.aboutUs__title h1 {
+    font-size: 3.8rem;
+    font-weight: 700;
+}

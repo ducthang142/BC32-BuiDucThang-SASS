@@ -1,0 +1,28 @@
+//bg1
+#bg1 {
+    position: absolute;
+    z-index: 0;
+}
+#bg1 img{
+    width: 100%;
+    height: auto;
+}
+
+//bg2 - teacher
+#bg2 img{
+    width: 100%;
+    height: auto;
+}
+
+//bg3 - teacher
+#bg3 {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    background-color: #dcd1f3;
+    
+    & img{
+    width: 100%;
+    height: auto;
+    }
+}

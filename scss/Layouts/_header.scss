@@ -1,0 +1,46 @@
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.contact-bar {
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    & a {
+    color: $color-black !important;
+    }
+}
+
+.navbar {
+    justify-content: space-between;
+    padding: 0;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+.phone {
+    background-color: #b61984;
+    border-radius: 20px;
+    padding: 0.7rem 1.3rem !important;
+
+    & span {
+        color: $color-white;
+    }
+
+    & i {
+        color: $color-white;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar {
+        display: block;
+    }
+}
