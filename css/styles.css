@@ -2,12 +2,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 header {
   position: absolute;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .contact-bar {
@@ -49,39 +50,12 @@ header {
     display: block;
   }
 }
-#bg1 {
-  position: absolute;
-  z-index: 0;
-}
-
-#bg1 img {
-  width: 100%;
-  height: auto;
-}
-
-#bg2 img {
-  width: 100%;
-  height: auto;
-}
-
-#bg3 {
-  position: absolute;
-  bottom: 0;
-  z-index: 0;
-  background-color: #dcd1f3;
-}
-#bg3 img {
-  width: 100%;
-  height: auto;
-}
-
 #aboutUs {
-  position: absolute;
-  z-index: 2;
+  position: relative;
+  z-index: 1;
   padding: 65px 0;
   width: 100%;
 }
-
 #aboutUs .aboutUs__content {
   display: flex;
   align-items: center;
@@ -90,27 +64,53 @@ header {
 .aboutUs__title h4 {
   color: #b61984;
   font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .aboutUs__title h1 {
-  font-size: 3.8rem;
+  font-size: 3.7rem;
   font-weight: 700;
 }
 
-#teacher {
+#bg1 {
   position: absolute;
-  z-index: 0;
-  top: 29rem;
-  left: 0;
-  right: 0;
+  z-index: 1;
+  top: 0;
+}
+#bg1 img {
   width: 100%;
-  padding-top: 2rem;
+  height: auto;
+}
+
+#bg2 {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+}
+#bg2 img {
+  width: 100%;
+  height: auto;
+}
+
+#teacher {
+  position: relative;
+  width: 100%;
 }
 #teacher .row {
   gap: 20px;
 }
 #teacher .teacher__bg {
   background-color: #dcd1f3;
+}
+#teacher .teacher__bg #bg3 {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+  background-color: #dcd1f3;
+}
+#teacher .teacher__bg #bg3 img {
+  width: 100%;
+  height: auto;
 }
 #teacher .teacher__content {
   padding-top: 2rem;
@@ -144,4 +144,137 @@ header {
 }
 .card:hover {
   box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.151);
+}
+
+#course {
+  padding: 4rem 0;
+}
+#course .course__content {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+#course img {
+  width: 100%;
+  height: auto;
+}
+#course h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 2.5rem 0;
+}
+#course .card {
+  text-align: left;
+  padding: 0 25px;
+}
+#course .card-body {
+  padding: 0;
+}
+#course .course__input {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+#course .course__input__name {
+  position: relative;
+  margin-right: 15px;
+}
+#course .course__input__name input {
+  border: none;
+  padding: 0 10px;
+  border: 1px solid rgba(0, 0, 0, 0.144);
+  padding: 0 10px 0 30px;
+  border-radius: 50px;
+  transition: all 0.6s;
+}
+#course .course__input__name input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.404);
+  box-shadow: none;
+}
+#course .course__input__name i {
+  position: absolute;
+  color: #b61984;
+  top: 11px;
+  left: 10px;
+}
+#course .course__input__email {
+  position: relative;
+  margin-bottom: 15px;
+}
+#course .course__input__email input {
+  border: none;
+  padding: 0 10px;
+  border: 1px solid rgba(0, 0, 0, 0.144);
+  padding: 0 10px 0 30px;
+  border-radius: 50px;
+  transition: all 0.6s;
+}
+#course .course__input__email input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.404);
+  box-shadow: none;
+}
+#course .course__input__email i {
+  position: absolute;
+  color: #b61984;
+  top: 11px;
+  left: 10px;
+}
+#course .course__select {
+  position: relative;
+  margin-bottom: 15px;
+}
+#course .course__select select {
+  border: none;
+  padding: 0 10px;
+  border: 1px solid rgba(0, 0, 0, 0.144);
+  padding: 0 10px 0 30px;
+  border-radius: 50px;
+  transition: all 0.6s;
+}
+#course .course__select select:focus {
+  border: 1px solid rgba(0, 0, 0, 0.404);
+  box-shadow: none;
+}
+#course .course__select i {
+  position: absolute;
+  color: #b61984;
+  top: 11px;
+  left: 10px;
+}
+#course .course__input__message {
+  position: relative;
+  margin-bottom: 45px;
+}
+#course .course__input__message textarea {
+  border: none;
+  padding: 10px 10px 0 30px;
+  border: 1px solid rgba(0, 0, 0, 0.144);
+  border-radius: 20px;
+  width: 100%;
+  transition: all 0.6s;
+}
+#course .course__input__message textarea:focus {
+  border: 1px solid rgba(0, 0, 0, 0.404);
+  box-shadow: none;
+}
+#course .course__input__message textarea:focus-visible {
+  outline: none;
+}
+#course .course__input__message i {
+  position: absolute;
+  color: #b61984;
+  top: 15px;
+  left: 11px;
+}
+#course button {
+  border-radius: 50px;
+  width: 9rem;
+  height: 3rem;
+  background-color: #b61984;
+  color: #ffffff;
+  border: 1px solid #b61984;
+  margin-bottom: 60px;
 }/*# sourceMappingURL=styles.css.map */

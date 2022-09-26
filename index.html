@@ -26,6 +26,14 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Font google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- CSS  -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -92,14 +100,6 @@
     </header>
     <!-- End Header  -->
 
-    <!-- Background  -->
-    <section id="bg1">
-      <div>
-        <img src="./image/yellow_top_wave_01.png" alt="" />
-      </div>
-    </section>
-    <!-- End Background  -->
-
     <!-- About Us  -->
     <section id="aboutUs">
       <div class="aboutUs__content container">
@@ -112,15 +112,19 @@
           <img src="./image/hero_team.png" alt="" />
         </div>
       </div>
+
+      <div id="bg1">
+        <img src="./image/yellow_top_wave_01.png" alt="" />
+      </div>
+
+      <div id="bg2">
+        <img src="./image/Violet_top_left_wave.png" alt="" />
+      </div>
     </section>
     <!-- End About Us  -->
 
     <!-- Teacher  -->
     <section id="teacher">
-      <div id="bg2">
-        <img src="./image/Violet_top_left_wave.png" alt="" />
-      </div>
-
       <div class="teacher__bg">
         <div class="teacher__content">
           <div class="container">
@@ -270,16 +274,62 @@
       </div>
     </section>
     <!-- End Teacher  -->
+
+    <!-- Course  -->
     <section id="course">
       <div class="container">
         <div class="course__content">
-          <img src="./image/conatct_inner.png" alt="">
+          <div class="col-7">
+            <img src="./image/conatct_inner.png" alt="" />
+          </div>
+
+          <div class="card col-5">
+            <h1>Find Your Course</h1>
+            <div class="card-body">
+              <div class="course__input">
+                <div class="course__input__name">
+                  <i class="fa-regular fa-user"></i>
+                  <input type="text" class="form-control" placeholder="Name" />
+                </div>
+                <div class="course__input__email">
+                  <i class="fa-regular fa-envelope"></i>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="E-mail"
+                  />
+                </div>
+              </div>
+              <div class="course__select">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <select class="form-control">
+                  <option value="">English</option>
+                  <option value="">French</option>
+                  <option value="">Spanish</option>
+                  <option value="">German</option>
+                </select>
+              </div>
+              <div class="course__input__message">
+                <i class="fa-regular fa-message"></i>
+                <textarea cols="40" rows="3" placeholder="Message"></textarea>
+              </div>
+              <button>SEND</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!-- Course  -->
-
     <!-- End Course -->
+
+
+    <div class="form-group">
+      <label for=""></label>
+      <select class="form-control" name="" id="">
+        <option></option>
+        <option></option>
+        <option></option>
+      </select>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

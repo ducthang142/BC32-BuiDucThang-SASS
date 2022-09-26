@@ -1,21 +1,46 @@
 #aboutUs {
-    position: absolute;
-    z-index: 2;
+    position: relative;
+    z-index: 1;
     padding: 65px 0;
     width: 100%;
-}
 
-#aboutUs .aboutUs__content{
+   & .aboutUs__content{
     display: flex;
     align-items: center;
+    }
 }
 
 .aboutUs__title h4 {
     color: #b61984;
     font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .aboutUs__title h1 {
-    font-size: 3.8rem;
+    font-size: 3.7rem;
     font-weight: 700;
+}
+
+//bg1
+#bg1 {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+
+    & img{
+    width: 100%;
+    height: auto;
+    }
+}
+
+//bg2 - teacher
+#bg2 {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    
+    & img{
+    width: 100%;
+    height: auto;
+    }
 }

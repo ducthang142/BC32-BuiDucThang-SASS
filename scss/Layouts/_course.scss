@@ -1,0 +1,156 @@
+#course {
+    padding: 4rem 0;
+
+    & .course__content {
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto
+    }
+
+    & img {
+        width: 100%;
+        height: auto;
+    }
+
+    & h1{
+        font-size: 2.3rem;
+        font-weight: 700;
+        text-align: center;
+        padding: 2.5rem 0;
+    }
+
+    & .card {
+        text-align: left;
+        padding: 0 25px;
+    }
+
+    & .card-body {
+        padding: 0;
+    }
+
+    & .course__input {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 15px;
+    }
+
+    & .course__input__name {
+        position: relative;   
+        margin-right: 15px;  
+
+        & input {
+            border: none;
+            padding: 0 10px;
+            border: 1px solid rgba(0, 0, 0, 0.144);
+            padding: 0 10px 0 30px;
+            border-radius: 50px;
+            transition: all 0.6s;
+
+            &:focus {
+                border: 1px solid rgba(0, 0, 0, 0.404);
+                box-shadow: none;
+            }
+        }
+
+        & i {
+            position: absolute;
+            color: #b61984;
+            top: 11px;
+            left: 10px;
+        }
+    }
+
+    & .course__input__email {
+        position: relative;     
+        margin-bottom: 15px;
+
+        & input {
+            border: none;
+            padding: 0 10px;
+            border: 1px solid rgba(0, 0, 0, 0.144);
+            padding: 0 10px 0 30px;
+            border-radius: 50px;
+            transition: all 0.6s;
+
+            &:focus {
+                border: 1px solid rgba(0, 0, 0, 0.404);
+                box-shadow: none;
+            }
+        }
+
+        & i {
+            position: absolute;
+            color: #b61984;
+            top: 11px;
+            left: 10px;
+        }
+    }
+
+    & .course__select {
+        position: relative;     
+        margin-bottom: 15px;
+
+        & select {
+            border: none;
+            padding: 0 10px;
+            border: 1px solid rgba(0, 0, 0, 0.144);
+            padding: 0 10px 0 30px;
+            border-radius: 50px;
+            transition: all 0.6s;
+
+            &:focus {
+                border: 1px solid rgba(0, 0, 0, 0.404);
+                box-shadow: none;
+            }
+        }
+
+        & i {
+            position: absolute;
+            color: #b61984;
+            top: 11px;
+            left: 10px;
+        }
+    }
+
+    & .course__input__message {
+        position: relative;
+        margin-bottom: 45px;
+
+        & textarea {
+            border: none;
+            padding: 10px 10px 0 30px;
+            border: 1px solid rgba(0, 0, 0, 0.144);
+            border-radius: 20px;
+            width: 100%;
+            transition: all 0.6s;
+
+            &:focus {
+                border: 1px solid rgba(0, 0, 0, 0.404);
+                box-shadow: none;
+            }
+
+            &:focus-visible {
+                outline: none;
+            }
+        }
+
+        & i {
+            position: absolute;
+            color: #b61984;
+            top: 15px;
+            left: 11px;
+        }
+    }
+
+    & button {
+        border-radius: 50px;
+        width: 9rem;
+        height: 3rem;
+        background-color: #b61984;
+        color: $color-white;
+        border: 1px solid #b61984;
+        margin-bottom: 60px;
+    }
+}
