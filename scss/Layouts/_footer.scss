@@ -1,0 +1,15 @@
+footer {
+    position: relative;
+    padding: 120px 0;
+
+    & .bg5 {
+        position: absolute;
+        top: 0;
+        z-index: -1;
+
+        & img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

@@ -68,7 +68,7 @@ header {
 }
 
 .aboutUs__title h1 {
-  font-size: 3.7rem;
+  font-size: 3.6rem;
   font-weight: 700;
 }
 
@@ -148,6 +148,7 @@ header {
 
 #course {
   padding: 4rem 0;
+  position: relative;
 }
 #course .course__content {
   width: 85%;
@@ -277,4 +278,27 @@ header {
   color: #ffffff;
   border: 1px solid #b61984;
   margin-bottom: 60px;
+}
+#course .bg4 {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+}
+#course .bg4 img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  position: relative;
+  padding: 120px 0;
+}
+footer .bg5 {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+footer .bg5 img {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=styles.css.map */
