@@ -1,101 +1,116 @@
 footer {
-    position: relative;
-    padding: 120px 0;
+  position: relative;
+  padding: 120px 0;
 
-    & .bg5 {
-        position: absolute;
-        top: 0;
-        z-index: -1;
+  & .bg5 {
+    width: 100%;
+    height: 500px;
+    background-image: url(../../image/footer_background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -1px;
+    z-index: -1;
 
-        & img {
-            width: 100%;
-            height: auto;
-        }
+    // & img {
+    //   width: 100%;
+    //   height: auto;
+    // }
+  }
+
+  & .footer__item {
+    color: $color-white;
+    font-size: $fs-sm;
+    font-weight: 500;
+
+    & h4 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 1.8rem;
     }
 
-    & .footer__item {
+    & .footer__item__info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      & p {
+        margin: 0;
+      }
+
+      & i {
+        margin-right: 15px;
+      }
+    }
+
+    & .footer__item__info:last-child {
+      margin-top: 25px;
+    }
+
+    & ul {
+      & li {
+        list-style: none;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #990171;
+      }
+
+      & a {
         color: $color-white;
-        font-size: $fs-sm;
-        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.6s;
+      }
 
-        & h4 {
-            font-size: 1.4rem;
-            font-weight: 700;
-            margin-bottom: 1.8rem;
-        }
-
-        & .footer__item__info {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-
-            & p {
-                margin: 0;
-            }
-
-            & i {
-                margin-right: 15px;
-            }
-        }
-
-        & .footer__item__info:last-child {
-            margin-top: 25px;
-        }
-
-        & ul {
-            
-
-            & li {
-            list-style: none;
-            padding-bottom: 10px ;
-            margin-bottom: 10px;   
-            border-bottom: 1px solid #990171;
-            }
-
-            & a {
-                color: $color-white;
-                text-decoration: none;
-                transition: all 0.6s;
-            }
-
-            & a:hover {
-                color: #fda2e0;
-            }
-        }
-
-        & input {
-            font-size: $fs-sm;
-            border-radius: 50px;
-            background-color: 
-            #aa017e;
-            padding: 1.5rem;
-            text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.13) !important;
-            margin-bottom: 10px;
-
-            &::placeholder {
-                color: $color-white;
-            }
-
-            &:focus {
-                box-shadow: none;
-                color: $color-white;
-                background-color: #aa017e;
-                border: 1px solid $color-white !important;
-            }
-        }
-
-        & button {
-            text-align: center;
-            width: 100%;
-            padding: 0.9rem;
-            border-radius: 50px;
-            border: 1px solid $color-white;
-            font-weight: 600;
-        }
+      & a:hover {
+        color: #fda2e0;
+      }
     }
 
-    & .footer__ul {
-        display: flex;
+    & input {
+      font-size: $fs-sm;
+      border-radius: 50px;
+      background-color: #aa017e;
+      padding: 1.5rem;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.13) !important;
+      margin-bottom: 10px;
+
+      &::placeholder {
+        color: $color-white;
+      }
+
+      &:focus {
+        box-shadow: none;
+        color: $color-white;
+        background-color: #aa017e;
+        border: 1px solid $color-white !important;
+      }
     }
+
+    & button {
+      text-align: center;
+      width: 100%;
+      padding: 0.9rem;
+      border-radius: 50px;
+      border: 1px solid $color-white;
+      font-weight: 600;
+      transition: all 0.6s;
+
+      &:hover {
+        color: $color-white;
+        background-color: #aa017e;
+      }
+    }
+  }
+
+  & .footer__ul {
+    display: flex;
+  }
+}
+
+//Responsive
+@media screen and (max-width: 992px) {
+  .bg5 {
+    height: 800px !important;
+  }
 }

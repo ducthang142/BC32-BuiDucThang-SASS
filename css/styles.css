@@ -21,7 +21,12 @@ header {
   font-weight: 500;
 }
 .nav-item a {
+  font-weight: 600;
   color: #000000 !important;
+  transition: all 0.2s;
+}
+.nav-item a:hover {
+  color: #b61984 !important;
 }
 
 .navbar {
@@ -32,17 +37,27 @@ header {
 .navbar-collapse {
   flex-grow: 0;
 }
+.navbar-collapse .navbar-nav {
+  align-items: center;
+}
 
 .phone {
   background-color: #b61984;
   border-radius: 20px;
   padding: 0.7rem 1.3rem !important;
+  border: 1px solid #b61984;
+  transition: all 0.6s !important;
 }
+.phone i,
 .phone span {
   color: #ffffff;
 }
-.phone i {
-  color: #ffffff;
+.phone:hover {
+  background-color: #ffffff;
+}
+.phone:hover i,
+.phone:hover span {
+  color: #b61984;
 }
 
 @media screen and (max-width: 1200px) {
@@ -74,7 +89,7 @@ header {
 
 #bg1 {
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   top: 0;
 }
 #bg1 img {
@@ -84,14 +99,26 @@ header {
 
 #bg2 {
   position: absolute;
-  z-index: 1;
-  bottom: 0;
+  z-index: -1;
+  bottom: -1px;
 }
 #bg2 img {
   width: 100%;
   height: auto;
 }
 
+@media screen and (max-width: 992px) {
+  .aboutUs__content {
+    margin-top: 8rem;
+    display: block !important;
+  }
+  .aboutUs__content h4 {
+    font-size: 1rem;
+  }
+  .aboutUs__content h1 {
+    font-size: 2.5rem;
+  }
+}
 #teacher {
   position: relative;
   width: 100%;
@@ -271,6 +298,8 @@ header {
   left: 11px;
 }
 #course button {
+  font-weight: 600;
+  font-size: 13px;
   border-radius: 50px;
   width: 9rem;
   height: 3rem;
@@ -278,29 +307,46 @@ header {
   color: #ffffff;
   border: 1px solid #b61984;
   margin-bottom: 60px;
+  transition: all 0.6s;
+}
+#course button:hover {
+  color: #b61984;
+  background-color: #ffffff;
 }
 #course .bg4 {
   position: absolute;
   z-index: -1;
-  bottom: 0;
+  bottom: 0px;
 }
 #course .bg4 img {
   width: 100%;
   height: auto;
 }
 
+@media screen and (max-width: 992px) {
+  .course__content {
+    display: block !important;
+  }
+  .course__content .card {
+    width: 100%;
+  }
+  .course__content .card button {
+    width: 100% !important;
+  }
+}
 footer {
   position: relative;
   padding: 120px 0;
 }
 footer .bg5 {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-}
-footer .bg5 img {
   width: 100%;
-  height: auto;
+  height: 500px;
+  background-image: url(../../image/footer_background.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: -1px;
+  z-index: -1;
 }
 footer .footer__item {
   color: #ffffff;
@@ -371,7 +417,18 @@ footer .footer__item button {
   border-radius: 50px;
   border: 1px solid #ffffff;
   font-weight: 600;
+  transition: all 0.6s;
+}
+footer .footer__item button:hover {
+  color: #ffffff;
+  background-color: #aa017e;
 }
 footer .footer__ul {
   display: flex;
+}
+
+@media screen and (max-width: 992px) {
+  .bg5 {
+    height: 800px !important;
+  }
 }/*# sourceMappingURL=styles.css.map */

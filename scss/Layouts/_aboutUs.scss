@@ -1,47 +1,62 @@
 #aboutUs {
-    position: relative;
-    z-index: 1;
-    padding: 65px 0;
-    width: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 65px 0;
+  width: 100%;
 
-   & .aboutUs__content{
+  & .aboutUs__content {
     display: flex;
     align-items: center;
-    }
+  }
 }
 
 .aboutUs__title h4 {
-    color: #b61984;
-    font-size: 1.1rem;
-    font-weight: 600;
+  color: #b61984;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .aboutUs__title h1 {
-    font-size: 3.6rem;
-    font-weight: 700;
+  font-size: 3.6rem;
+  font-weight: 700;
 }
-
 
 //bg1
 #bg1 {
-    position: absolute;
-    z-index: 1;
-    top: 0;
+  position: absolute;
+  z-index: -1;
+  top: 0;
 
-    & img{
+  & img {
     width: 100%;
     height: auto;
-    }
+  }
 }
 
 //bg2 - teacher
 #bg2 {
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    
-    & img{
+  position: absolute;
+  z-index: -1;
+  bottom: -1px;
+
+  & img {
     width: 100%;
     height: auto;
+  }
+}
+
+//Responsive
+@media screen and (max-width: 992px) {
+  .aboutUs__content {
+    margin-top: 8rem;
+    display:block !important;
+
+    & h4 {
+        font-size: 1rem;
     }
+
+    & h1 {
+        font-size: 2.5rem;
+    }
+  }
 }
